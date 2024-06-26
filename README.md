@@ -1,6 +1,27 @@
 # Overview
 This is a repository for mediapipe application on pitcher motion
-# Branch : Main
-This is the original repository from mediapipe
-# Branch : Master
-* Add UI and specialized motion capture code for hand path
+
+# Command
+``
+conda create --name [YOUR_ENV_NAME]
+``
+
+``
+conda activate [YOUR_ENV_NAME]
+``
+
+``
+conda install --file requirements.txt
+``
+
+> for sideview
+
+``
+python start_for_skeleton.py
+``
+
+> for release point
+
+``
+python start_for_releasepoint.py
+``

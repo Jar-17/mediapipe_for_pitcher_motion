@@ -23,12 +23,12 @@ class Ui_MainWindow(object):
         
 #video1        
         self.label_videoframe = QtWidgets.QLabel(self.centralwidget)
-        self.label_videoframe.setGeometry(QtCore.QRect(150, 200, 400, 250))
+        self.label_videoframe.setGeometry(QtCore.QRect(150, 140, 400, 250))
         self.label_videoframe.setFrameShape(QtWidgets.QFrame.WinPanel)
         self.label_videoframe.setObjectName("label_videoframe")
 
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox.setGeometry(QtCore.QRect(10, 200, 110, 200))
+        self.groupBox.setGeometry(QtCore.QRect(10, 140, 110, 200))
         self.groupBox.setObjectName("groupBox")
 
 
@@ -79,14 +79,77 @@ class Ui_MainWindow(object):
         self.button_stop.setObjectName("button_stop")
         
         self.label_filepath = QtWidgets.QLabel(self.centralwidget)
-        self.label_filepath.setGeometry(QtCore.QRect(10, 450, 640, 40))
+        self.label_filepath.setGeometry(QtCore.QRect(10, 390, 640, 40))
         self.label_filepath.setObjectName("label_filepath")
 
         self.slider_videoframe = QtWidgets.QSlider(self.centralwidget)
-        self.slider_videoframe.setGeometry(QtCore.QRect(150, 160, 400, 40))
+        self.slider_videoframe.setGeometry(QtCore.QRect(150, 100, 400, 40))
         self.slider_videoframe.setOrientation(QtCore.Qt.Horizontal)
         self.slider_videoframe.setObjectName("slider_videoframe")
 
+        self.groupBox2 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox2.setGeometry(QtCore.QRect(10, 460, 110, 200))
+        self.groupBox2.setObjectName("groupBox2")
+
+        #button for video 
+        self.button_openfile2 = QtWidgets.QPushButton(self.groupBox2)
+        self.button_openfile2.setGeometry(QtCore.QRect(5, 50, 100, 30))
+        self.button_openfile2.setObjectName("button_openfile2")
+
+        self.label_videoframe2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_videoframe2.setGeometry(QtCore.QRect(150, 460, 400, 250))
+        self.label_videoframe2.setFrameShape(QtWidgets.QFrame.WinPanel)
+        self.label_videoframe2.setObjectName("label_videoframe2")
+
+        #label for frmae count video1
+        # self.label_framecnt2 = QtWidgets.QLabel(self.centralwidget)
+        # self.label_framecnt2.setGeometry(QtCore.QRect(1300, 910, 600, 30))
+        # self.label_framecnt2.setObjectName("label_framecnt")
+
+        # self.framecnt2 = QtWidgets.QLabel(self.centralwidget)
+        # self.framecnt2.setGeometry(QtCore.QRect(1600, 910, 600, 40))
+        # self.framecnt2.setObjectName("framecnt2")
+
+        # self.totalcnt2 = QtWidgets.QLabel(self.centralwidget)
+        # self.totalcnt2.setGeometry(QtCore.QRect(1700, 910, 600, 40))
+        # self.totalcnt2.setObjectName("totalcnt2")
+        
+        self.button_rewind2 = QtWidgets.QPushButton(self.groupBox2)
+        self.button_rewind2.setGeometry(QtCore.QRect(5, 90, 30, 30))
+        self.button_rewind2.setObjectName("button_rewind2")
+        self.button_rewind2.setIcon(QtGui.QIcon("D:/1122/專題/swim/video/icons/rewind.png"))
+        self.button_rewind2.setIconSize(QtCore.QSize(30,30))
+
+        self.button_play2 = QtWidgets.QPushButton(self.groupBox2)
+        self.button_play2.setGeometry(QtCore.QRect(35, 90, 30, 30))
+        self.button_play2.setObjectName("button_play")
+        self.button_play2.setIcon(QtGui.QIcon("D:/1122/專題/swim/video/icons/play.jpg"))
+        self.button_play2.setIconSize(QtCore.QSize(30,30))
+
+        self.button_pause2 = QtWidgets.QPushButton(self.groupBox2)
+        self.button_pause2.setGeometry(QtCore.QRect(35, 120, 30, 30))
+        self.button_pause2.setObjectName("button_pause")
+        self.button_pause2.setIcon(QtGui.QIcon("D:/1122/專題/swim/video/icons/pause.jpg"))
+        self.button_pause2.setIconSize(QtCore.QSize(30,30))
+
+        self.button_forward2 = QtWidgets.QPushButton(self.groupBox2)
+        self.button_forward2.setGeometry(QtCore.QRect(65, 90, 30, 30))
+        self.button_forward2.setObjectName("button_forward2")
+        self.button_forward2.setIcon(QtGui.QIcon("D:/1122/專題/swim/video/icons/forward.jpg"))
+        self.button_forward2.setIconSize(QtCore.QSize(30,30))
+
+        self.button_stop2 = QtWidgets.QPushButton(self.groupBox2)
+        self.button_stop2.setGeometry(QtCore.QRect(5, 150, 100, 30))
+        self.button_stop2.setObjectName("button_stop")
+# (170, 460, 400, 250)
+        self.label_filepath2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_filepath2.setGeometry(QtCore.QRect(10, 750, 640, 40))
+        self.label_filepath2.setObjectName("label_filepath")
+
+        self.slider_videoframe2 = QtWidgets.QSlider(self.centralwidget)
+        self.slider_videoframe2.setGeometry(QtCore.QRect(150, 710, 400, 40))
+        self.slider_videoframe2.setOrientation(QtCore.Qt.Horizontal)
+        self.slider_videoframe2.setObjectName("slider_videoframe")
 
         self.groupBox3 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox3.setGeometry(QtCore.QRect(600, 860, 330, 100))
@@ -155,10 +218,6 @@ class Ui_MainWindow(object):
         self.button_process.setGeometry(QtCore.QRect(15, 885, 240, 60))
         self.button_process.setObjectName("button_process")
         
-        self.button_showimg = QtWidgets.QPushButton(self.centralwidget)
-        self.button_showimg.setGeometry(QtCore.QRect(255, 885, 240, 60))
-        self.button_showimg.setObjectName("button_image")
-
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -168,31 +227,39 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Video"))
         
-        self.label_videoframe.setText(_translate("MainWindow", "輸入影片"))
+        self.label_videoframe.setText(_translate("MainWindow", "影片1"))
+        self.label_videoframe2.setText(_translate("MainWindow", "影片2"))
         self.label_videoframe3.setText(_translate("MainWindow", "疊合結果"))
         self.label_videoframe.setFont(QtGui.QFont("Arial", 50))
+        self.label_videoframe2.setFont(QtGui.QFont("Arial", 50))
         self.label_videoframe3.setFont(QtGui.QFont("Arial", 50))
 
-        self.button_openfile.setText(_translate("MainWindow", "打開影片"))
+        self.button_openfile.setText(_translate("MainWindow", "打開影片1"))
         self.button_openfile.setFont(QtGui.QFont("Arial", 10))
 
-        self.button_stop.setText(_translate("MainWindow", "影片開頭"))
+        self.button_stop.setText(_translate("MainWindow", "影片1開頭"))
         self.button_stop.setFont(QtGui.QFont("Arial",10))
         
-        self.label_filepath.setText(_translate("MainWindow", "影片地址:"))
+        self.label_filepath.setText(_translate("MainWindow", "影片1地址:"))
         self.label_filepath.setFont(QtGui.QFont("Arial", 8))
 
-        self.button_openfile3.setText(_translate("MainWindow", "打開結果"))
+        self.button_openfile2.setText(_translate("MainWindow", "打開影片2"))
+        self.button_openfile2.setFont(QtGui.QFont("Arial", 10))
+
+        self.button_stop2.setText(_translate("MainWindow", "影片2開頭"))
+        self.button_stop2.setFont(QtGui.QFont("Arial", 10))
+
+        self.label_filepath2.setText(_translate("MainWindow", "影片2地址"))
+        self.label_filepath2.setFont(QtGui.QFont("Arial", 8))
+
+        self.button_openfile3.setText(_translate("MainWindow", "打開影片3"))
         self.button_openfile3.setFont(QtGui.QFont("Arial", 10))
 
-        self.button_stop3.setText(_translate("MainWindow", "結果開頭"))
+        self.button_stop3.setText(_translate("MainWindow", "影片3開頭"))
         self.button_stop3.setFont(QtGui.QFont("Arial", 10))
 
         self.button_process.setText(_translate("MainWindow", "process"))
         self.button_process.setFont(QtGui.QFont("Arial", 20))
-
-        self.button_showimg.setText(_translate("MainWindow", "image"))
-        self.button_showimg.setFont(QtGui.QFont("Arial", 20))
 
         # self.label_framecnt.setText(_translate("MainWindow", "frame"))
         # self.label_framecnt.setFont(QtGui.QFont("Arial", 20))

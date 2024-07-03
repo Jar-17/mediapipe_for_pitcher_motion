@@ -11,7 +11,7 @@ conda activate [YOUR_ENV_NAME]
 ``
 
 ``
-conda install --file requirements.txt
+pip install --file requirements.txt
 ``
 
 > for sideview

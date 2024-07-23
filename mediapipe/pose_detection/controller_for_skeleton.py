@@ -25,7 +25,7 @@ class MainWindow_controller(QMainWindow):
         self.ui.button_showimg.clicked.connect(self.showimg)
 
     def showimg(self):
-        img_path = "D:/mediapipe/result/outcome.jpg"
+        img_path = "./result/outcome.jpg"
         img = cv2.imread(img_path)
         img = cv2.resize(img,(1920,1080))
         cv2.imshow("grounded_img",img)
@@ -36,7 +36,7 @@ class MainWindow_controller(QMainWindow):
         command = ""
         if self.video_path :
             
-            command = f"python D://mediapipe/pose_detection/POSE.py --source {self.video_path} "
+            command = f"python ./POSE.py --source {self.video_path} "
             print(command)
        
         os.system(command)
@@ -69,7 +69,7 @@ class MainWindow_controller(QMainWindow):
         
     def open_file_video3(self):
         # filename3, filetype3 = QFileDialog.getOpenFileName(self, "Open file Window", "./", "Video Files(*.mp4 *.avi)") # start path        
-        self.video_path3 = "D://mediapipe/result/outcome.mp4"
+        self.video_path3 = "./result/outcome.mp4"
         self.video_controller3 = video_controller3(video_path=self.video_path3,
                                                     ui=self.ui)
         self.ui.button_play3.clicked.connect(self.video_controller3.play) # connect to function()

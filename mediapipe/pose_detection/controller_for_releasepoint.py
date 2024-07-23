@@ -28,7 +28,7 @@ class MainWindow_controller(QMainWindow):
         command = ""
         if self.video_path and self.video_path2:
             
-            command = f"python D://mediapipe/pose_detection/POSE_frontview.py --source1 {self.video_path} --source2 {self.video_path2}"
+            command = f"python ./POSE_frontview.py --source1 {self.video_path} --source2 {self.video_path2}"
             print(command)
        
         os.system(command)
@@ -61,7 +61,7 @@ class MainWindow_controller(QMainWindow):
         
     def open_file_video3(self):
         # filename3, filetype3 = QFileDialog.getOpenFileName(self, "Open file Window", "./", "Video Files(*.mp4 *.avi)") # start path        
-        self.video_path3 = "D://mediapipe/result/combined.mp4"
+        self.video_path3 = "./result/combined.mp4"
         self.video_controller3 = video_controller3(video_path=self.video_path3,
                                                     ui=self.ui)
         self.ui.button_play3.clicked.connect(self.video_controller3.play) # connect to function()

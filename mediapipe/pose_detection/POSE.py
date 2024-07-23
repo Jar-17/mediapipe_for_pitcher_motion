@@ -100,7 +100,7 @@ def main():
 
     while not flag:
         
-        save_path = "D:/mediapipe/result/"+"opt.source"+".mp4"
+        save_path = "./result/outcome.mp4"
 
         ret, frame = cam.read()
         fps = cam.get(cv2.CAP_PROP_FPS)
@@ -129,7 +129,7 @@ def main():
 
             if vid_path != save_path: #new video
                 vid_path = save_path
-                test_path = save_path + ".jpg"
+                test_path = save_path[:-4] + ".jpg"
                 if isinstance(vid_writer , cv2.VideoWriter):
                     vid_writer.release() #release previous video writer
                     

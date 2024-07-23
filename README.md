@@ -3,7 +3,7 @@ This is a repository for mediapipe application on pitcher motion
 
 # Command
 ``
-conda create --name [YOUR_ENV_NAME]
+conda create --name [YOUR_ENV_NAME] python=3.9
 ``
 
 ``
@@ -11,7 +11,7 @@ conda activate [YOUR_ENV_NAME]
 ``
 
 ``
-conda install --file requirements.txt
+pip install --file requirements.txt
 ``
 
 > for sideview
